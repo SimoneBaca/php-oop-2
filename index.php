@@ -49,6 +49,22 @@ class Computer {
         }
     }
 
+    $computers = [
+        new Desktop('Acer', 'Aspire3', '500$', 'desktop'),
+        new Laptop('Apple', 'MacBook Pro', '1200$', 'laptop'),
+      ];
+      foreach ($computers as $computer) {
+        ?>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><?php echo ucfirst($computer->getType()); ?></h5>
+            <p class="card-text"><?php echo "Brand: " . ucfirst($computer->getBrand()) . "<br>Model: " . ucfirst($computer->getModel()) . "<br>Price: " . ucfirst($computer->getPrice()); ?></p>
+          </div>
+        </div>
+        <?php
+        }
+        ?>
+
     
       
     
