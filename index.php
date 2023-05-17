@@ -37,8 +37,19 @@ class Computer {
 
 
   //extend class
-  //class Desktop extends Computer {
-  //  public function __construct( $type,$brand, $model, $price)  }
+  class Desktop extends Computer {
+    public function __construct( $brand, $model, $price) { 
+    parent::__construct('Desktop', $brand, $model, $price);
+}
+}
 
-    //class Laptop extends Computer {
-       // public function __construct($type,$brand, $model, $price)  }
+    class Laptop extends Computer {
+        public function __construct($brand, $model, $price) {  
+            parent::__construct('Laptop', $brand, $model, $price);
+        }
+    }
+
+    
+      
+    
+      
