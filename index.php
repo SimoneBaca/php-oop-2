@@ -7,23 +7,16 @@ Nella card, indichiamo anche che tipo di prodotto stiamo visualizzando (desktop,
 <?php
 class Computer {
     public $type;
-    public function __construct($type) {
-      $this->type = $type;
-    }
-  }
-  
-  class Desktop extends Computer {
-    public function getType() {
-      return "Desktop";
-    }
-  }
-  
-  class Laptop extends Computer {
-    public function getType() {
-      return "Laptop";
-    }
-  }
+    public $brand;
+    public $model;
+    public $price;
+}
+//extend class
+//class Desktop extends Computer {
+    //public function __construct($brand, $model, $price) 
+//}
 
 
-
-  
+//class Laptop extends Computer {
+   // public function __construct($brand, $model, $price)
+//}
