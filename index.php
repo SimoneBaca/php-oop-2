@@ -10,13 +10,35 @@ class Computer {
     public $brand;
     public $model;
     public $price;
-}
-//extend class
-//class Desktop extends Computer {
-    //public function __construct($brand, $model, $price) 
-//}
+  
+    public function __construct($type, $brand, $model, $price) {
+      $this->type = $type;
+      $this->brand = $brand;
+      $this->model = $model;
+      $this->price = $price;
+    }
+  
+    public function getType() {
+      return $this->type;
+    }
+  
+    public function getBrand() {
+      return $this->brand;
+    }
+  
+    public function getModel() {
+      return $this->model;
+    }
+  
+    public function getPrice() {
+      return $this->price;
+    }
+  }
 
 
-//class Laptop extends Computer {
-   // public function __construct($brand, $model, $price)
-//}
+  //extend class
+  //class Desktop extends Computer {
+  //  public function __construct( $type,$brand, $model, $price)  }
+
+    //class Laptop extends Computer {
+       // public function __construct($type,$brand, $model, $price)  }
